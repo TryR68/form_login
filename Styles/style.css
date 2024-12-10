@@ -6,7 +6,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to right, rgb(86, 71, 149), rgb(255, 3, 200));
+    background: linear-gradient(to right, rgb(86, 71, 149), rgb(0, 0, 0));
 }
 
 
@@ -53,21 +53,41 @@ body{
     flex-direction: column;
     align-items: center;
 }
-.entrer-email, .entrer-mdp{
+label{
     display: flex;
     justify-content: baseline;
 }
 
-.premier-plan input[type="text"]{
+.entrer-mdp label,
+.entrer-email label{
+    background: rgba(255, 255, 255, .3);
+    padding: 8px;
+    border-radius: 8px;
+    margin: 8px;  
+}
+input[type='text'],
+input[type='password']{
     border: none;
     outline: none;
-    background: rgba(255, 255, 255, .3);
-    
+    background: rgba(255, 255, 255, .0);
+    border-radius: 8px;
+    margin-left: 12px;
+    min-width: 250px;
+}
+.end-form-contenair{
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+    font-size: 12px;
+    align-items: center;
+    gap: 12px;
+
 }
 
-
-.end-form-contenair{
-    display: flex;
+.envoyer input{
+    background-color: black;
+    color: white;
 }
 .pas-de-compte{
     text-align: center; 
