@@ -77,17 +77,29 @@ input[type='password']{
 .end-form-contenair{
     min-width: 300px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     margin-top: 12px;
     font-size: 12px;
     align-items: center;
-    gap: 12px;
-
+    gap: 6px;
+    margin-bottom: 14px;
 }
 
-.envoyer input{
-    background-color: black;
-    color: white;
+.envoyer input {
+    padding: 12px;
+    border-radius: 40px;
+    font-size: 16px;
+    background: rgb(0, 0, 0);
+    font-weight: bold;
+    color: #ffffff;
+    border: none;
+    margin-bottom: 14px;
+
+    transition: transform 0.3s ease;
+}
+
+.envoyer input:hover{
+    transform: scale(1.05);
 }
 .pas-de-compte{
     text-align: center; 
